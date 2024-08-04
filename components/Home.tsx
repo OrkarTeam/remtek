@@ -226,7 +226,7 @@ const HomePage: React.FC = () => {
                 What Our Customers Say
               </h2>
               <p className="mt-4 text-xl text-gray-500">
-                Don't just take our word for it - hear from our satisfied customers.
+                Don&apos;t just take our word for it - hear from our satisfied customers.
               </p>
             </div>
             <div className="mt-12 grid gap-8 lg:grid-cols-2">

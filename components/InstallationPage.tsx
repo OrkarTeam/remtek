@@ -142,7 +142,6 @@ const InstallationPage = () => {
         <img
           src="/api/placeholder/640/360"
           alt="Video placeholder"
-          layout="fill"
           className="rounded-lg object-cover"
         />
       </div>

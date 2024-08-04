@@ -5,18 +5,17 @@ import { motion } from 'framer-motion';
 import { ViewfinderCircleIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 interface Product {
-  id: string;
-  handle: string;
+  id: number;
   name: string;
   description: string;
   price: number;
   image: string;
-  image2: string;
-  image3: string;
+  handle?: string;
+  image2?: string;
+  image3?: string;
   category?: string; // Make category optional
-  pricePerM2: string;
+  pricePerM2?: number;
 }
-
 interface ProductCardProps {
   product: Product;
 }

@@ -5,7 +5,12 @@ import Footer from './ui/Footer';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Camera } from "lucide-react";
 
-const FAQItem = ({ question, answer }) => {
+interface FAQItemProps {
+  question: string;
+  answer: string;
+}
+
+const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -47,8 +52,13 @@ const FAQItem = ({ question, answer }) => {
   );
 };
 
-const FAQPage = () => {
-  const faqs = [
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+const FAQPage: React.FC = () => {
+  const faqs: FAQ[] = [
     {
       question: "How do I enter the dimensions correctly?",
       answer: "Please measure your windows from the inside of the frame. Do not specify the final product size, but the width and height from seal to seal. We add a 3cm aluminum strip in both the width and height (total 6cm on the final product). For a visual guide, watch our detailed explanation video."
